@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unequal Grid Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            /* Unequal column sizes */
+            gap: 10px;
+            /* Space between grid items */
+        }
+
+        .item {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .item1 {
+            grid-column: span 2;
+            /* Make the first item span two columns */
+        }
+
+        .item3 {
+            grid-column: span 1;
+            /* Make the third item span one column */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Unequal Grid Layout Example</h1>
+    <div class="container">
+        <div class="item item1">Item 1 (Spans 2 Columns)</div>
+        <div class="item">Item 2</div>
+        <div class="item item3">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+
+</body>
+
+</html>
