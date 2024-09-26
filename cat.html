@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Content</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .hero {
+            background-image: url('https://example.com/cricket-bg.jpg');
+            /* Replace with your image URL */
+            background-size: cover;
+            height: 300px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .card {
+            margin: 15px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Cricket World</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Teams</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Players</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Matches</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Welcome to Cricket World!</h1>
+        <p>Your one-stop destination for all things cricket.</p>
+    </div>
+
+    <!-- Container for Cards -->
+    <div class="container">
+        <h2 class="text-center mt-4">Top Players</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://example.com/player1.jpg" class="card-img-top" alt="Player 1">
+                    <!-- Replace with your image URL -->
+                    <div class="card-body">
+                        <h5 class="card-title">Player 1</h5>
+                        <p class="card-text">Role: Batsman</p>
+                        <a href="#" class="btn btn-primary">View Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://example.com/player2.jpg" class="card-img-top" alt="Player 2">
+                    <!-- Replace with your image URL -->
+                    <div class="card-body">
+                        <h5 class="card-title">Player 2</h5>
+                        <p class="card-text">Role: Bowler</p>
+                        <a href="#" class="btn btn-primary">View Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://example.com/player3.jpg" class="card-img-top" alt="Player 3">
+                    <!-- Replace with your image URL -->
+                    <div class="card-body">
+                        <h5 class="card-title">Player 3</h5>
+                        <p class="card-text">Role: All-Rounder</p>
+                        <a href="#" class="btn btn-primary">View Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
