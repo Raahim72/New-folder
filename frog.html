@@ -1,6 +1,5 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +9,11 @@
         .page {
             display: none;
         }
-
         .active {
             display: block;
         }
     </style>
 </head>
-
 <body>
 
     <!-- Navbar -->
@@ -29,6 +26,15 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" onclick="showPage('about')">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showPage('services')">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showPage('gallery')">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showPage('testimonials')">Testimonials</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" onclick="showPage('contact')">Contact</a>
@@ -49,6 +55,43 @@
         <div class="container mt-4">
             <h1>About Us</h1>
             <p>This is the about page where you can learn more about us.</p>
+        </div>
+    </div>
+
+    <div id="services" class="page">
+        <div class="container mt-4">
+            <h1>Our Services</h1>
+            <p>Here are some services we offer:</p>
+            <ul>
+                <li>Service 1</li>
+                <li>Service 2</li>
+                <li>Service 3</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="gallery" class="page">
+        <div class="container mt-4">
+            <h1>Gallery</h1>
+            <p>Check out our gallery of images:</p>
+            <img src="https://via.placeholder.com/150" alt="Sample Image" class="img-fluid">
+            <img src="https://via.placeholder.com/150" alt="Sample Image" class="img-fluid">
+            <img src="https://via.placeholder.com/150" alt="Sample Image" class="img-fluid">
+        </div>
+    </div>
+
+    <div id="testimonials" class="page">
+        <div class="container mt-4">
+            <h1>Testimonials</h1>
+            <p>What our clients say:</p>
+            <blockquote class="blockquote">
+                <p class="mb-0">"This service is fantastic!"</p>
+                <footer class="blockquote-footer">Client 1</footer>
+            </blockquote>
+            <blockquote class="blockquote">
+                <p class="mb-0">"I highly recommend them!"</p>
+                <footer class="blockquote-footer">Client 2</footer>
+            </blockquote>
         </div>
     </div>
 
@@ -73,5 +116,4 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>
